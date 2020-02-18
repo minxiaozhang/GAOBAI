@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>520  </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"></script>
+</head>
+<body>
+    <div>
+    <div>
+        <div id="xinzhi" style=" position: absolute;
+        z-index: -1;
+        width: 100%;
+        width: 100%;
+        height: 100%;" >
+        <div class="border"></div>
+        <img id="pen" class="pen" src="./imgs/pen.png" alt="">
+        <img   class="pen1" src="./imgs/pen.png" alt="">
+        <img   class="pen2" src="./imgs/pen.png" alt="">
+        <img   class="pen3" src="./imgs/pen.png" alt="">
+        <img   class="pen4" src="./imgs/pen.png" alt="">
+        </div>
+        <p  id="aa" style=" 
+        font-family:myfont;
+        font-size: 24px;   
+        padding-top: 74px;
+        text-align: center;
+        line-height: 32px;
+        text-decoration-line: underline;"></p> 
+        <div style="display:none"  id="chest" class="chest">
+                <div class="heart left side top"></div>
+                <div class="heart center"></div>
+                <div class="heart right side"></div>
+            </div>
+        <img id="lover" style="display:none"  class="lover" src="./imgs/lover.png" >
+        <img id="heart1" style="display:none"  class="heart1" src="./imgs/h2.png" >
+        <img id="heart2" style="display:none"  class="heart2" src="./imgs/h2.png" >
+        <img id="heart3" style="display:none"  class="heart3" src="./imgs/h2.png" >
+        <img id="heart4" style="display:none"  class="heart4" src="./imgs/h2.png" >
+        <img id="heart5" style="display:none"  class="heart5" src="./imgs/h2.png" >
+        <img id="heart6" style="display:none"  class="heart6" src="./imgs/h2.png" >
+        <img id="heart7" style="display:none"  class="heart7" src="./imgs/h2.png" >
+        <img id="heart8" style="display:none"  class="heart8" src="./imgs/h2.png" >
+        <img id="heart9" style="display:none"  class="heart9" src="./imgs/h2.png" >
+        <img id="heart10" style="display:none"  class="heart10" src="./imgs/h2.png" >
+        <img id="heart11" style="display:none"  class="heart11" src="./imgs/h2.png" >
+        <img id="heart12" style="display:none"  class="heart12" src="./imgs/h2.png" >
+    
+    <div style="display:none;" id="w">
+        或许辨不清日升日落<br>
+        或许看不到流云晚霞<br>
+        不知道耳边溪流，咫尺可达<br>
+        不知道天地浩瀚，人间喧哗<br>
+        但我知道<br>
+        星河在上，波光在下<br>
+        我在你身边<br>  
+        等着你的回答</div>
+    <script type="text/javascript">
+        window.onload = type;
+        var index = 0;
+        var word = $("#w").html();
+        let wl=word.length
+        function type(){
+            $("#aa").html(word.substring(0,index++));
+            if(index > wl) {
+             switch(index){
+               case wl+1:
+                    setTimeout(function(){
+                        $("#lover").css('display','block')
+                        $("#heart1").css('display','block')
+                        $("#heart2").css('display','block')
+                        $("#heart3").css('display','block')
+                        $("#heart4").css('display','block')
+                        $("#heart5").css('display','block')
+                        $("#heart6").css('display','block')
+                        $("#heart7").css('display','block')
+                        $("#heart8").css('display','block')
+                        $("#heart9").css('display','block')
+                        $("#heart10").css('display','block')
+                        $("#heart11").css('display','block')
+                        $("#heart12").css('display','block')
+                        type();
+                    },70);
+                    break;
+               case wl+2:
+                setTimeout(function(){
+                    $("#chest").css('display','block');
+        
+                    printHeart();
+                },3500);
+                break;
+              }
+              return;
+            } else {
+                setTimeout(type,70);
+            };
+            var n = 0
+            let x=0,y=0
+            let countX=$("#xinzhi").width/$("#pen").width
+            let countY=$("#xinzhi").height/$("#pen").height
+
+        }
+
+
+        function printHeart(){
+            console.log("%c情人节快乐————to my boy!!!"," text-shadow: 0 1px 0 #ccc,0 2px 0 #c9c9c9,0 3px 0 #bbb,0 4px 0 #b9b9b9,0 5px 0 #aaa,0 6px 1px rgba(0,0,0,.1),0 0 5px rgba(0,0,0,.1),0 1px 3px rgba(0,0,0,.3),0 3px 5px rgba(0,0,0,.2),0 5px 10px rgba(0,0,0,.25),0 10px 10px rgba(0,0,0,.2),0 20px 20px rgba(0,0,0,.15);font-size:30px")
+            setTimeout(function(){
+                console.log("%c❤","background: rgba(0,0,0,1);background: -moz-linear-gradient(left, rgba(252,234,187,1) 0%, rgba(175,250,77,1) 12%, rgba(0,247,49,1) 28%, rgba(0,210,247,1) 39%,rgba(0,189,247,1) 51%, rgba(133,108,217,1) 64%, rgba(177,0,247,1) 78%, rgba(247,0,189,1) 87%, rgba(245,22,52,1) 100%);background: -webkit-gradient(left top, right top, color-stop(0%, rgba(252,234,187,1)), color-stop(12%, rgba(175,250,77,1)), color-stop(28%, rgba(0,247,49,1)), color-stop(39%, rgba(0,210,247,1)), color-stop(51%, rgba(0,189,247,1)), color-stop(64%, rgba(133,108,217,1)), color-stop(78%, rgba(177,0,247,1)), color-stop(87%, rgba(247,0,189,1)), color-stop(100%, rgba(245,22,52,1)));background: -webkit-linear-gradient(left, rgba(252,234,187,1) 0%, rgba(175,250,77,1) 12%, rgba(0,247,49,1) 28%, rgba(0,210,247,1) 39%, rgba(0,189,247,1) 51%, rgba(133,108,217,1) 64%, rgba(177,0,247,1) 78%, rgba(247,0,189,1) 87%, rgba(245,22,52,1) 100%);background: -o-linear-gradient(left, rgba(252,234,187,1) 0%, rgba(175,250,77,1) 12%, rgba(0,247,49,1) 28%, rgba(0,210,247,1) 39%, rgba(0,189,247,1) 51%, rgba(133,108,217,1) 64%, rgba(177,0,247,1) 78%, rgba(247,0,189,1) 87%, rgba(245,22,52,1) 100%);background: -ms-linear-gradient(left, rgba(252,234,187,1) 0%, rgba(175,250,77,1) 12%, rgba(0,247,49,1) 28%, rgba(0,210,247,1) 39%, rgba(0,189,247,1) 51%, rgba(133,108,217,1) 64%, rgba(177,0,247,1) 78%, rgba(247,0,189,1) 87%, rgba(245,22,52,1) 100%);background: linear-gradient(to right, rgba(252,234,187,1) 0%, rgba(175,250,77,1) 12%, rgba(0,247,49,1) 28%, rgba(0,210,247,1) 39%, rgba(0,189,247,1) 51%, rgba(133,108,217,1) 64%, rgba(177,0,247,1) 78%, rgba(247,0,189,1) 87%, rgba(245,22,52,1) 100%);filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fceabb', endColorstr='#f51634', GradientType=1 );font-size:5em")
+                   },1000)
+                   }
+        </script>
+</body>
+</html>
